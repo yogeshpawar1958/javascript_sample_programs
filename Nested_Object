@@ -1,0 +1,36 @@
+const bio={
+    name:"yogesh",
+    sirname:'pawar',
+    age:29,
+    address:{
+        village:'nilwande',
+        city:'sangamner',
+        street:{
+            street1:"street1",
+            street2:'street2'
+        },
+        district:'ahmednagar',
+    }
+}
+
+const isObject=function(val){
+    if(val===null)
+      {
+          return false;
+      }
+    return (typeof val==='object')  
+}
+
+const objProps=function(obj){
+ for(let val in obj){
+     if(isObject(obj[val]))
+     {
+         objProps(obj[val]);
+     }
+     else{
+          console.log(obj[val]) 
+     }
+} ;  
+};
+
+objProps(bio);
