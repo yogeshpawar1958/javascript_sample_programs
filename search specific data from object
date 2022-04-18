@@ -4,12 +4,21 @@ const data=[
       {id:3,title:'Buy Apple',isDone:false},
        {id:4,title:'Buy grapes',isDone:false}
     ]
-    
+    //using findIndex() method
     const findData=(allObj,title)=>{
         let index1=allObj.findIndex((curr,index)=>{
             return curr.title.toLowerCase()==title.toLowerCase();
         })
         return allObj[index1];
+        
+    }
+    
+    //using find() method
+    const findData=(allObj,title)=>{
+        let matchedData=allObj.find((curr,index)=>{
+            return curr.title.toLowerCase()==title.toLowerCase();
+        })
+        return matchedData;
         
     }
     
