@@ -1,0 +1,17 @@
+const data=[
+    {id:1,title:'Buy Mango',isDone:false},
+     {id:2,title:'Go gym',isDone:false},
+      {id:3,title:'Buy Apple',isDone:false},
+       {id:4,title:'Buy grapes',isDone:false}
+    ]
+    
+    const findData=(allObj,title)=>{
+        let index1=allObj.findIndex((curr,index)=>{
+            return curr.title.toLowerCase()==title.toLowerCase();
+        })
+        return allObj[index1];
+        
+    }
+    
+    let data1=findData(data,'Buy Apple');
+    console.log(data1)
