@@ -1,0 +1,17 @@
+// word in first String which is not present in second String
+// str1 = " i love my india"
+// str2 = "i am from india, my india"
+// output : missing word - love
+
+let str1="i love my india"
+let str2 = "i am from india, my india";
+
+let str3=str1.split(" ");
+let str4=str2.split(" ");
+
+
+for(let i=0;i<str3.length;i++){
+   if(!str4.includes(str3[i])){
+    console.log(str3[i])  //love 
+   }
+}
