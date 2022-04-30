@@ -1,0 +1,7 @@
+let array = [7, 3, 3, 2, 5, 6, 7,1,1,8,8];
+const duplicate=(array)=>{
+   return array.filter((item,index)=>array.indexOf(item)!==index)
+}
+
+const data=duplicate(array);
+console.log("duplicate",data)
