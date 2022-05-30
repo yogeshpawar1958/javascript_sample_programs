@@ -1,0 +1,22 @@
+const isValid=(str)=>{
+    let tempArr=[];
+    for(let i=0;i<str.length;i++){
+        let temp=tempArr[tempArr.length-1];
+        if(str[i]=="("||str[i]=="{"||str[i]=="["){
+            tempArr.push(str[i]);
+            
+        }else if(
+            (temp=="(" && str[i]==")")
+        ||(temp=="{" && str[i]=="}")
+        ||(temp=="[" && str[i]=="]")
+        ){
+            tempArr.pop();
+        }
+    }
+    if(tempArr.length==0){
+        console.log("matching")
+    }else {
+        console.log("not matching")
+    }
+}
+isValid("[()]{}{[()()]()}")
