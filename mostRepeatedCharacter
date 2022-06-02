@@ -1,0 +1,22 @@
+var text = 'asdjhjkerjsdaksjdhqjjwehkjasdkjhasdmnxbczdhfoiwer';
+
+//I want you to find which letter is used the most
+const maxRepeatedLetter=(data)=>{
+let obj={};
+let arr=data.split("");
+let maxChar=arr[0]
+let temp=0;
+for(let i=0;i<arr.length;i++){
+let max=0;
+for(let j=i;j<arr.length;j++){
+if(arr[i]==arr[j]){
+max+=1;
+}
+}
+if(max>=temp){
+temp=max;
+maxChar=arr[i];
+}
+
+}
+console.log(temp,maxChar)
