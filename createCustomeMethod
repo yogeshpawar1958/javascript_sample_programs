@@ -1,0 +1,13 @@
+let a=[2,3,4,5,12]
+
+Array.prototype.max=()=>{
+    let arra=[...a];
+    let max=arra[0];
+    for(let i=0;i<arra.length;i++){
+        if(arra[i]>=max)
+        max=arra[i]
+    }
+    return max
+}
+
+console.log(a.max());
