@@ -1,0 +1,14 @@
+const subString=(str)=>{
+let tempArr=[];
+    for(let i=0;i<str.length;i++){
+       
+
+        for(let j=i+1;j<str.length+1;j++){
+            tempArr.push(str.slice(i,j));
+        }
+    }
+    console.log(tempArr)
+
+}
+subString("dog")
+
