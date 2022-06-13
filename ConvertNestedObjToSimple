@@ -1,0 +1,38 @@
+const obj={
+    name:"yogesh",
+   email:"yog@gmail.com"
+   ,contact:"75636327",
+    skill:{
+        primary:"javascript",
+        secondary:"Angular",
+        heighest:{
+            marks:"80",
+            qulifications:"msc"
+        }
+    }
+}
+
+const nestedtoSimple=(obj)=>{
+ let tempobj={};
+ for(let val in obj){
+     let value=obj[val];
+     let type=typeof(obj[val])
+ if(["string","boolean"].includes(type) || (type==='number' && !isNaN(value) )){
+     tempobj[val]=obj[val];
+ } else if(type==='object'){
+    Object.assign(tempobj,nestedtoSimple(value))
+ }  
+     
+ } 
+ return tempobj
+}
+console.log(nestedtoSimple(obj))
+
+////////////// output///////////////////
+{ name: 'yogesh',
+  email: 'yog@gmail.com',
+  contact: '75636327',
+  primary: 'javascript',
+  secondary: 'Angular',
+  marks: '80',
+  qulifications: 'msc' }
