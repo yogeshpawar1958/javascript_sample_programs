@@ -7,3 +7,13 @@ for(let i=0;i<arr.length;i++){
     }
 }
 console.log(b)//1,2,5,8,3
+
+
+OR///
+
+let arr=[5,4,4,3,2,7,5]
+
+let n=arr.filter((ele,ind,cur)=>{
+  return  cur.indexOf(ele)===ind
+})
+console.log(n)
