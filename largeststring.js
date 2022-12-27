@@ -19,3 +19,20 @@ small=""
   }
   console.log("largest string==  "+large)
   console.log("smallest string==  "+small)
+
+
+*******************************************OR*********************************************
+   var str="par yogesh aba sai ram om sangamner bolao m"
+str=str.split(" ");
+largest=str[0]
+small=str[0]
+for(let i=0;i<str.length;i++){
+    if(str[i].length>largest.length){
+        largest=str[i]
+    }
+    if(str[i].length<small.length){
+        small=str[i]
+    }
+}
+console.log("largest==>",largest)
+console.log("smallest string is ",small)
