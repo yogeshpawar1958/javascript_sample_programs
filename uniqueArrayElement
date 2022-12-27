@@ -17,3 +17,10 @@ let n=arr.filter((ele,ind,cur)=>{
   return  cur.indexOf(ele)===ind
 })
 console.log(n)
+
+
+OR
+
+let arr=[1,2,3,1,4,67,32,22,4,3]
+let b= [...new Set(arr)]
+console.log(b)
