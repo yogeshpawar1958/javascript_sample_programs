@@ -1,0 +1,12 @@
+function checkOccurances(string,char){
+    let count=0
+  for(let i=0;i<string.length;i++){
+  
+      if(string[i]==char){
+          count+=1
+      }
+  } 
+  console.log(char,count) //e 2
+}
+checkOccurances("i love my india yogesh pawar","e")  
+
