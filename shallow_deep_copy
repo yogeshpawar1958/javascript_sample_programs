@@ -1,0 +1,42 @@
+var a = 10;
+var b = a;
+b = 20;
+
+console.log(a);//10
+console.log(b);//20
+
+var a = 'Ayush';
+var b = a;
+b = 'Verma';
+
+console.log(a); //Ayush
+console.log(b); //Verma
+Explanation ====< The value assigned to the variable of primitive data type is tightly coupled.
+That means, whenever you create a copy of a variable of primitive data type,
+the value is copied to a new memory location to which the new variable is pointing to.
+When you make a copy, it will be a real copy.
+
+
+
+
+example 1
+var obj = {a:1};
+var secondObj = obj;
+secondObj.a = 2;
+
+console.log(obj); //{a:2}
+console.log(secondObj); //{a:2}
+ 
+ example 2
+var obj = {a:1};
+var secondObj = obj;
+secondObj = {a:2};
+
+console.log(obj); //{a:1}
+console.log(secondObj); //{a:2}
+
+
+
+Exlanation======
+1. If the object property is changed, then the new object is pointing to the same memory address, so the original object property will also change. ( call by reference ) 
+2. If the object is reassigned with a new object then it is allocated to a new memory location, i.e it will be a real copy (call by value).
