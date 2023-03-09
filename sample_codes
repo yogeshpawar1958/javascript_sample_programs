@@ -1,0 +1,8 @@
+1===>
+for(let i=0;i<5;i++){
+var btn=document.createElement('button');
+btn.appendChild(document.createTextNode("Button"+i));
+btn.addEventListener("click",function(){console.log(i);});
+document.body.appendChild(btn);
+}
+O/P==> 5 buttons will create with title Button0, Button1, Button2, Button3,Button4 , when we click on Buutton3 it will print in 3 in console.log
