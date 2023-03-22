@@ -16,3 +16,15 @@ document.body.appendChild(btn);
 }
 O/P==> 5 buttons will create with title Button0, Button1, Button2, Button3,Button4 , when we click on any button it will print in 5 in console.log
         
+3====>
+function outer(){
+    var x=10;
+    function inner(){
+       ++x
+        console.log(x) //NAN
+         x=20
+    }
+    inner()
+}
+outer()
+
