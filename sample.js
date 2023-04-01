@@ -20,3 +20,12 @@ a=a^b;
 b=a^b;
 a=a^b;
 console.log("after swapping"+"a=  "+a+"b=  "+b)
+
+
+
+
+// for (let i = 1; i <= 5; i++) {
+//   let f = i % 3 == 0,    
+//     b = i % 5 == 0;
+//   console.log(f ? (b ? 'FizzBuzz' : 'Fizz') : b ? 'Buzz' : i);
+// }
