@@ -1,0 +1,29 @@
+const arr=[
+{ name: 'John D', role: 'Developer' },
+ { name: 'Merry J', role: 'Developer' },
+{ name: 'Jacob S', role: 'Developer' },
+{ name: 'Angelo D', role: 'Manager' },
+{ name: 'Mike C', role: 'Developer' },
+{ name: 'Victor M', role: 'Manager' },
+];
+
+const result={}
+for(data of arr){
+ result[data.role]=  result[data.role]? [...result[data.role],data] :[data]
+}
+console.log(result)
+
+
+o/p==>
+{
+  Developer: [
+    { name: 'John D', role: 'Developer' },
+    { name: 'Merry J', role: 'Developer' },
+    { name: 'Jacob S', role: 'Developer' },
+    { name: 'Mike C', role: 'Developer' }
+  ],
+  Manager: [
+    { name: 'Angelo D', role: 'Manager' },
+    { name: 'Victor M', role: 'Manager' }
+  ]
+}
