@@ -44,3 +44,11 @@ console.log(res) //[ 5, 4, 3, 2, 1 ]
   console.log(obj['size']) //small
    console.log(obj.size)   //small
     console.log(obj.data) //undefined
+    
+    
+    6==>
+    var x=10
+var y=new Number(10)
+console.log(x==y)  //true
+console.log(x===y)  //false beacouse typeof(y)==object 
+when we any number or string using new keyword its create object 
