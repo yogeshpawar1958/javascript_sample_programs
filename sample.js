@@ -46,3 +46,7 @@ let n=10+20+"30"
 console.log(typeof n) // string
 console.log(typeof 10+20+"30")  //number2030
 console.log(typeof +"yog") //number
+console.log(false-true)    //-1
+console.log(!true-true)   //-1
+console.log(!true-false)   //0
+console.log(true-false)  //1
