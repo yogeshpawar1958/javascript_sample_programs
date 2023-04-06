@@ -41,3 +41,7 @@ o/p==>    [ 1, 2, 3, [Circular] ]
 console.log(!!null)  //false
 console.log(!!"")   //false
 console.log(!!1)    //true
+
+let n=10+20+"30"
+console.log(typeof n) // string
+console.log(typeof 10+20+"30")  //number2030
