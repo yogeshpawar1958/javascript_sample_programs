@@ -50,3 +50,4 @@ console.log(false-true)    //-1
 console.log(!true-true)   //-1
 console.log(!true-false)   //0
 console.log(true-false)  //1
+console.log(true + +"10")  //11
