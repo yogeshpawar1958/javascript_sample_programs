@@ -36,3 +36,8 @@ const ar=[1,2,3,4]
 ar[3]=ar
 console.log(ar)
 o/p==>    [ 1, 2, 3, [Circular] ]
+
+
+console.log(!!null)  //false
+console.log(!!"")   //false
+console.log(!!1)    //true
