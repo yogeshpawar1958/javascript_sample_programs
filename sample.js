@@ -29,3 +29,10 @@ console.log("after swapping"+"a=  "+a+"b=  "+b)
 //     b = i % 5 == 0;
 //   console.log(f ? (b ? 'FizzBuzz' : 'Fizz') : b ? 'Buzz' : i);
 // }
+
+
+
+const ar=[1,2,3,4]
+ar[3]=ar
+console.log(ar)
+o/p==>    [ 1, 2, 3, [Circular] ]
