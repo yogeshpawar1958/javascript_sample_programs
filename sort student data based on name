@@ -1,0 +1,19 @@
+const data=[
+    {name:"yogesh",age:20,class:"msc"},
+        {name:"sai",age:20,class:"msc"},
+        {name:"amir",age:20,class:"msc"},
+        {name:"babu",age:20,class:"msc"},
+    {name:"akash",age:20,class:"msc"},
+    {name:"rahul",age:20,class:"msc"}
+    ]
+    
+    data.sort(function (a, b) {
+  if (a.name < b.name) {
+    return -1;
+  }
+  if (a.name > b.name) {
+    return 1;
+  }
+  return 0;
+});
+console.log(data)
