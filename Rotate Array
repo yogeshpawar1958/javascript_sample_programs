@@ -1,0 +1,15 @@
+let arr=[2,7,11,-2,3]
+
+function rotation(arr,n){
+   let res=arr.slice(0,n)
+let temp=arr.slice(n)
+res=[...temp,...res]
+console.log("original array==>",arr)
+console.log("after rotation==>",res)
+ 
+}
+rotation(arr,2)
+
+o/p=====>
+original array==> [ 2, 7, 11, -2, 3 ]
+after rotation==> [ 11, -2, 3, 2, 7 ]
