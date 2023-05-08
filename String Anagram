@@ -42,6 +42,7 @@ function stringAnagram(str1,str2){
         } 
             tempObject[info]--
     }
+    // if we directly return true then also it is work fine
              return Object.values(tempObject).every((val)=>val==0)
     }else
     {
