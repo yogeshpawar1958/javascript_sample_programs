@@ -19,3 +19,34 @@ function stringAnagram(str1,str2){
 }
 console.log(stringAnagram(str,str2)) ;
 
+
+########################################case 2 ## Efficient Way ########################
+let str="yogeSh"
+let str2="oGeshy"
+
+function stringAnagram(str1,str2){
+    if(str1.length===str2.length){
+     str1=str1.toLowerCase() ;
+     str2=str2.toLowerCase();
+     let tempObject={};
+     for(let data of str1){
+         tempObject[data]=tempObject[data]?  tempObject[data]+1: 1
+         
+         //we can write this way also 
+        //  i.e first time it will undefined ,if undefined then assign 0 and then +1 , else actualvalue +1
+         tempObject[data]=(tempObject[data] ||0)+1
+     }
+    for(let info of str2){
+        if(!tempObject[info]){
+            return false
+        } 
+            tempObject[info]--
+    }
+             return Object.values(tempObject).every((val)=>val==0)
+    }else
+    {
+       return false ;
+    }
+}
+console.log(stringAnagram(str,str2))
+
