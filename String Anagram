@@ -34,7 +34,7 @@ function stringAnagram(str1,str2){
          
          //we can write this way also 
         //  i.e first time it will undefined ,if undefined then assign 0 and then +1 , else actualvalue +1
-         tempObject[data]=(tempObject[data] ||0)+1
+        // tempObject[data]=(tempObject[data] ||0)+1
      }
     for(let info of str2){
         if(!tempObject[info]){
