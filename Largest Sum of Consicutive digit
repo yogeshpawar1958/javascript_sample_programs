@@ -1,0 +1,17 @@
+//it is very simple just understand the logic 
+function countUniqueNumbers(arr,n){
+   count=0
+   for(let i=0;i<arr.length-n+1;i++){
+       let  sum=0
+       for(let j=i;j<i+n;j++){
+         sum+=arr[j]  
+       }
+       if(sum>count){
+           count=sum
+       }
+   }
+   return count
+}
+console.log(countUniqueNumbers([1,2,3,4,3,5,4,6,7,8],4)) // 25 =. it will count first four digit of array from first element , then from second and so on
+console.log(countUniqueNumbers([1,2,3,4,3,5,4,6,7,8],3))  // 21
+console.log(countUniqueNumbers([1,2,3,4,3,5,4,6,7,8],5)) // 30
